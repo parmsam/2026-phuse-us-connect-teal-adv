@@ -31,7 +31,7 @@ embed-resources: true
 | 2 | Shiny app submission | ✅ FDA accepted |
 | 3 | ADaM datasets in R | ✅ FDA accepted Aug 2024 |
 | 4 | WebAssembly + Containers | ✅ Submitted 2024–2025 |
-| 5 | Dataset-JSON | 🔄 Resubmitted Jan 2026 |
+| 5 | Dataset-JSON | 🔄 Resubmitted Jan 2026, under review |
 :::
 ::: {.column width="50%"}
 **Upcoming**
@@ -173,19 +173,20 @@ WebR is a genuinely remarkable piece of technology — R running entirely in the
 
 - Full Linux environment bundled
 - R + all package dependencies included
-- Reproducible across reviewer machines
+- Submitted Summer 2025, tested across ~15 FDA environments
+- Docker issues encountered were resolvable
 
-**Submitted:** Summer 2025
-
-**Current status:**
-Ongoing discussions about running containers **behind FDA firewalls** — a practical challenge for internal IT policy.
+::: {.callout-important}
+## Critical finding (Dec 2025)
+**WSL is no longer permitted on FDA reviewer computers** due to a security policy update. Docker on Windows requires WSL — making Docker-based submissions effectively blocked at FDA.
+:::
 :::
 ::: {.column width="45%"}
 ::: {.callout-warning}
 ## Unexpected finding
-FDA reviewers **preferred WebAssembly** over containers due to simpler browser-based access.
+FDA reviewers **preferred WebAssembly** over containers — contrary to the team's expectation.
 
-No IT approval required. No firewall issues.
+WebAssembly only needed a browser. No WSL, no IT approval, no firewall issues.
 :::
 
 **Repos:** [submissions-pilot4-container](https://github.com/RConsortium/submissions-pilot4-container) · [to-fda](https://github.com/RConsortium/submissions-pilot4-container-to-fda)
@@ -193,7 +194,7 @@ No IT approval required. No firewall issues.
 :::
 
 ::: {.notes}
-The container approach is technically more powerful (no wasm constraints) but hits real-world IT policy walls. The WebAssembly preference was a genuine surprise to the team.
+The WSL security policy change is a fundamental blocker — not just an inconvenience. Docker requires WSL on Windows, and FDA reviewers work on Windows. This emerged from testing across 15 environments in late 2025. The Pilot 4 summary report documents all findings and was nearing completion as of Feb 2026.
 :::
 
 ---
@@ -204,13 +205,12 @@ The container approach is technically more powerful (no wasm constraints) but hi
 ::: {.column width="50%"}
 **Technical wins**
 
-- Interactive Shiny apps are viable in FDA submissions
-- WebAssembly runs in-browser with no setup
-- Containers provide full reproducibility
-- `{pkglite}` → now native `.zip` support
+- Interactive Shiny apps viable in FDA submissions ✅
+- WebAssembly: runs in-browser, no R install required ✅
+- Containers: reproducible but **WSL ban blocks Docker on Windows** ⚠️
+- FDA eCTD now accepts `.zip`, `.rds`, `.rdb`, `.rdx`, `.rda`, `.md`, `.rd` natively (Aug 2025)
 
-**FDA eCTD expanded formats (Aug 2025):**
-Now accepts `.rds`, `.rdb`, `.rdx`, `.rda`, `.md`, `.rd`, `.zip`, `.html` directly
+> `{pkglite}` remains a valid, peer-reviewed approach — `.zip` is an added *option*, not a replacement
 :::
 ::: {.column width="50%"}
 **Regulatory wins**

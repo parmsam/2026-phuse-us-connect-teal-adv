@@ -34,6 +34,22 @@ All URLs fetched and saved as raw markdown via [defuddle.md](https://defuddle.md
 | `fda-ectd-expanded-formats.md` | Expanded FDA eCTD File Format Support for R Packages | https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/ |
 | `swissmedic-presentation.md` | R Consortium Submission WG Presentation to Swissmedic on Regulatory Submission using R and Shiny | https://r-consortium.org/posts/one-more-step-forward-the-r-consortium-submission-working-group-presentation-to-swissmedic-on-regulator-submission-using-r-and-shiny/ |
 
+## Meeting Minutes
+
+| File | Date | URL |
+|------|------|-----|
+| `minutes-index.md` | Index | https://rconsortium.github.io/submissions-wg/minutes.html |
+| `minutes-2025-12-05.md` | Dec 5, 2025 | https://rconsortium.github.io/submissions-wg/minutes/2025-12-05/index.html |
+| `minutes-2026-01-09.md` | Jan 9, 2026 | https://rconsortium.github.io/submissions-wg/minutes/2026-01-09/index.html |
+| `minutes-2026-02-06.md` | Feb 6, 2026 | https://rconsortium.github.io/submissions-wg/minutes/2026-02-06/index.html |
+| `minutes-2026-03-06.md` | Mar 6, 2026 | https://rconsortium.github.io/submissions-wg/minutes/2026-03-06/index.html |
+
+## Tooling & Publishing
+
+| File | Title | URL |
+|------|-------|-----|
+| `quarto-github-pages.md` | GitHub Pages – Quarto Documentation | https://quarto.org/docs/publishing/github-pages.html |
+
 ## Papers
 
 | File | Title | URL | Note |
