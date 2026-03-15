@@ -1,11 +1,14 @@
 ---
 title: "Shiny for Submission"
 subtitle: "Updates from the R Consortium R Submissions Working Group"
-author: "PHUSE US Connect 2026 · AV09 {teal} Advance Session"
+author: PHUSE US Connect 2026 · AV09 {teal} Advance Session \
+
+  Sam Parmar
 date: "2026-03-15"
 format:
   revealjs:
     theme: default
+    smaller: true
     slide-number: true
     progress: true
     transition: slide
@@ -13,6 +16,7 @@ format:
     footer: "R Consortium R Submissions WG · PHUSE US Connect 2026"
     code-overflow: wrap
     highlight-style: github
+embed-resources: true
 ---
 
 ## The Journey So Far {.center}
