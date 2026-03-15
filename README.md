@@ -56,6 +56,16 @@ The skill handles filename inference and saves to `ref-sources/` automatically. 
 
 ---
 
+## Meeting Minutes (Dec 2025 – Mar 2026)
+
+Fetched from https://rconsortium.github.io/submissions-wg/minutes.html — see `ref-sources/links.md` for full index.
+
+Key findings relevant to this presentation:
+- **Dec 2025:** WSL no longer permitted on FDA reviewer computers — effectively blocks Docker on Windows for container submissions
+- **Jan 2026:** Pilot 5 resubmitted; Pilot 6 confirmed not a formal FDA submission; Pilot 7 sub-team forming
+- **Feb 2026:** Pilot 4 summary report nearing completion; Docker/Windows WSL challenges documented
+- **Mar 2026:** Pilot 5 still under review with R version compatibility issues (curl, 4.4.3 vs 4.5.x)
+
 ## Key Repositories
 
 - **Pilot 2:** https://github.com/RConsortium/submissions-pilot2

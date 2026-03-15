@@ -26,11 +26,12 @@ Do not use WebFetch to populate ref-sources — it summarizes content through an
 
 - **Pilot 2 (~2022 H1):** First Shiny app submitted via FDA eCTD portal. Shiny code packaged as proprietary R package via `{pkglite}`. FDA deployed on their own infrastructure.
 - **Pilot 4 WebAssembly (Sept 20, 2024):** First publicly available WebAssembly submission received by FDA CDER. Runs in Microsoft Edge, no R installation required. Lead: Eric Nantz (Eli Lilly).
-- **Pilot 4 Containers (Summer 2025):** Docker-based (early Appsilon experimental work used Podman; canonical RConsortium repo uses Docker). Challenge: installing Docker on Windows in FDA environment. Formal report still pending.
+- **Pilot 4 Containers (Summer 2025):** Docker-based (early Appsilon experimental work used Podman; canonical RConsortium repo uses Docker). Tested across ~15 FDA computing environments. Critical finding (Dec 2025): WSL is no longer permitted on FDA reviewer computers due to a security policy update — Docker on Windows requires WSL, effectively blocking Docker-based submissions at FDA. Formal summary report nearing completion as of Feb 2026.
 - **FDA preference:** WebAssembly over containers — contrary to the team's expectation.
 - **FDA eCTD format expansion (Aug 2025):** Now accepts `.zip`, `.rds`, `.rdb`, `.rdx`, `.rda`, `.md`, `.rd`, `.html`. `{pkglite}` remains valid — `.zip` is an added option, not a replacement (Dec 2025 correction in source).
-- **Pilot 6:** Kicked off Jan 2026. Will NOT be submitted to FDA — groundwork for future pilots.
-- **Pilot 7:** Kicked off Jan 2026. Simulated realistic CDISC data using statistical simulation + AI.
+- **Pilot 5 (ongoing):** Resubmitted Jan 2026. Under FDA review as of Mar 2026 — R version compatibility issues (curl library, 4.4.3 vs 4.5.x).
+- **Pilot 6:** Kicked off Jan 2026. Will NOT be submitted to FDA — AI-assisted programming (GitHub Copilot, KG AI, Conviva), Friday meetings 10am ET.
+- **Pilot 7:** Kicked off Jan 2026. Simulated realistic CDISC data; OpenClinica synthetic data obtained, sub-team forming.
 
 ## Slide Accuracy Rules
 
