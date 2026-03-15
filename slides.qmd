@@ -13,7 +13,7 @@ format:
     progress: true
     transition: slide
     logo: ""
-    footer: "R Consortium R Submissions WG · PHUSE US Connect 2026"
+    footer: "R Consortium R Submissions WG · PHUSE US Connect 2026 · [parmsam.github.io/2026-phuse-us-connect-teal-adv](https://parmsam.github.io/2026-phuse-us-connect-teal-adv)"
     code-overflow: wrap
     highlight-style: github
 embed-resources: true
