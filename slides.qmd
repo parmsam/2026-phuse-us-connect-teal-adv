@@ -169,7 +169,7 @@ WebR is a genuinely remarkable piece of technology — R running entirely in the
 
 ::: {.columns}
 ::: {.column width="55%"}
-**Podman container approach**
+**Docker container approach**
 
 - Full Linux environment bundled
 - R + all package dependencies included
@@ -188,7 +188,7 @@ FDA reviewers **preferred WebAssembly** over containers due to simpler browser-b
 No IT approval required. No firewall issues.
 :::
 
-**Repo:** [experimental-fda-submission-4-podman](https://github.com/Appsilon/experimental-fda-submission-4-podman)
+**Repos:** [submissions-pilot4-container](https://github.com/RConsortium/submissions-pilot4-container) · [to-fda](https://github.com/RConsortium/submissions-pilot4-container-to-fda)
 :::
 :::
 

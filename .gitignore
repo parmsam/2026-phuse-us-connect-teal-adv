@@ -1,4 +1,5 @@
-ref-sources/
+ref-sources/*
+!ref-sources/links.md
 .quarto/
 _site/
 *.html

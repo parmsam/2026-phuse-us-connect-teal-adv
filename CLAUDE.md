@@ -20,13 +20,13 @@ All reference material lives in `ref-sources/` (gitignored). Sources are fetched
 curl -s "https://defuddle.md/example.com/some-page/" > ref-sources/some-page.md
 ```
 
-Do not use WebFetch to populate ref-sources — it summarizes content through an AI model and loses detail.
+Do not use WebFetch to populate ref-sources — it summarizes content through an AI model and loses detail. When adding a new source, also update `ref-sources/links.md` with the URL, filename, and category — this file is gitignored except for `links.md`.
 
 ## Key Facts (from sources)
 
 - **Pilot 2 (~2022 H1):** First Shiny app submitted via FDA eCTD portal. Shiny code packaged as proprietary R package via `{pkglite}`. FDA deployed on their own infrastructure.
 - **Pilot 4 WebAssembly (Sept 20, 2024):** First publicly available WebAssembly submission received by FDA CDER. Runs in Microsoft Edge, no R installation required. Lead: Eric Nantz (Eli Lilly).
-- **Pilot 4 Containers (Summer 2025):** Podman-based. Challenge: installing Docker on Windows in FDA environment. Formal report still pending.
+- **Pilot 4 Containers (Summer 2025):** Docker-based (early Appsilon experimental work used Podman; canonical RConsortium repo uses Docker). Challenge: installing Docker on Windows in FDA environment. Formal report still pending.
 - **FDA preference:** WebAssembly over containers — contrary to the team's expectation.
 - **FDA eCTD format expansion (Aug 2025):** Now accepts `.zip`, `.rds`, `.rdb`, `.rdx`, `.rda`, `.md`, `.rd`, `.html`. `{pkglite}` remains valid — `.zip` is an added option, not a replacement (Dec 2025 correction in source).
 - **Pilot 6:** Kicked off Jan 2026. Will NOT be submitted to FDA — groundwork for future pilots.

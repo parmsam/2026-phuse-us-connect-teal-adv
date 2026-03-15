@@ -26,7 +26,23 @@ quarto render slides.qmd
 
 ## Reference Sources
 
-> Note: fetched content is stored in `ref-sources/` (gitignored). Sources were fetched as clean markdown via [defuddle.md](https://defuddle.md) (prepend `https://defuddle.md/` to any URL to get a clean markdown version).
+> Note: fetched content is stored in `ref-sources/` (gitignored except for [`ref-sources/links.md`](ref-sources/links.md)). Sources were fetched as clean raw markdown via [defuddle.md](https://defuddle.md) — no AI summarisation.
+
+`ref-sources/links.md` is a tracked index of every URL fetched, organised by category. Update it whenever a new source is added.
+
+To repopulate `ref-sources/` yourself, you can use `curl` directly:
+
+```bash
+curl -s "https://defuddle.md/r-consortium.org/posts/submissions-wg-2026/" > ref-sources/submissions-wg-2026.md
+```
+
+Or if you're using Claude Code with the `/defuddle` skill installed (see `.claude/skills/defuddle/`), you can run:
+
+```
+/defuddle https://r-consortium.org/posts/submissions-wg-2026/
+```
+
+The skill handles filename inference and saves to `ref-sources/` automatically. Note: defuddle does not work with PDFs — fetch those separately.
 
 | Source | URL |
 |--------|-----|
@@ -43,6 +59,9 @@ quarto render slides.qmd
 ## Key Repositories
 
 - **Pilot 2:** https://github.com/RConsortium/submissions-pilot2
+- **Pilot 2 (to FDA):** https://github.com/RConsortium/submissions-pilot2-to-fda
 - **Pilot 4 (WebAssembly):** https://github.com/RConsortium/submissions-pilot4-webR
-- **Pilot 4 (Container):** https://github.com/Appsilon/experimental-fda-submission-4-podman
+- **Pilot 4 (WebAssembly to FDA):** https://github.com/RConsortium/submissions-pilot4-webR-to-fda
+- **Pilot 4 (Container):** https://github.com/RConsortium/submissions-pilot4-container
+- **Pilot 4 (Container to FDA):** https://github.com/RConsortium/submissions-pilot4-container-to-fda
 - **Submissions WG Site:** https://rconsortium.github.io/submissions-wg
