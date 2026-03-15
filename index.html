@@ -1038,7 +1038,7 @@ Sam Parmar
 <tr class="odd">
 <td>5</td>
 <td>Dataset-JSON</td>
-<td>🔄 Resubmitted Jan 2026</td>
+<td>🔄 Resubmitted Jan 2026, under review</td>
 </tr>
 </tbody>
 </table>
@@ -1231,10 +1231,22 @@ display:block!important;
 <ul>
 <li>Full Linux environment bundled</li>
 <li>R + all package dependencies included</li>
-<li>Reproducible across reviewer machines</li>
+<li>Submitted Summer 2025, tested across ~15 FDA environments</li>
+<li>Docker issues encountered were resolvable</li>
 </ul>
-<p><strong>Submitted:</strong> Summer 2025</p>
-<p><strong>Current status:</strong> Ongoing discussions about running containers <strong>behind FDA firewalls</strong> — a practical challenge for internal IT policy.</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Critical finding (Dec 2025)</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>WSL is no longer permitted on FDA reviewer computers</strong> due to a security policy update. Docker on Windows requires WSL — making Docker-based submissions effectively blocked at FDA.</p>
+</div>
+</div>
+</div>
 </div><div class="column" style="width:45%;">
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
@@ -1245,15 +1257,15 @@ display:block!important;
 <p><strong>Unexpected finding</strong></p>
 </div>
 <div class="callout-content">
-<p>FDA reviewers <strong>preferred WebAssembly</strong> over containers due to simpler browser-based access.</p>
-<p>No IT approval required. No firewall issues.</p>
+<p>FDA reviewers <strong>preferred WebAssembly</strong> over containers — contrary to the team’s expectation.</p>
+<p>WebAssembly only needed a browser. No WSL, no IT approval, no firewall issues.</p>
 </div>
 </div>
 </div>
 <p><strong>Repos:</strong> <a href="https://github.com/RConsortium/submissions-pilot4-container">submissions-pilot4-container</a> · <a href="https://github.com/RConsortium/submissions-pilot4-container-to-fda">to-fda</a></p>
 </div></div>
 <aside class="notes">
-<p>The container approach is technically more powerful (no wasm constraints) but hits real-world IT policy walls. The WebAssembly preference was a genuine surprise to the team.</p>
+<p>The WSL security policy change is a fundamental blocker — not just an inconvenience. Docker requires WSL on Windows, and FDA reviewers work on Windows. This emerged from testing across 15 environments in late 2025. The Pilot 4 summary report documents all findings and was nearing completion as of Feb 2026.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1272,12 +1284,14 @@ display:block!important;
 <div class="column" style="width:50%;">
 <p><strong>Technical wins</strong></p>
 <ul>
-<li>Interactive Shiny apps are viable in FDA submissions</li>
-<li>WebAssembly runs in-browser with no setup</li>
-<li>Containers provide full reproducibility</li>
-<li><code>{pkglite}</code> → now native <code>.zip</code> support</li>
+<li>Interactive Shiny apps viable in FDA submissions ✅</li>
+<li>WebAssembly: runs in-browser, no R install required ✅</li>
+<li>Containers: reproducible but <strong>WSL ban blocks Docker on Windows</strong> ⚠️</li>
+<li>FDA eCTD now accepts <code>.zip</code>, <code>.rds</code>, <code>.rdb</code>, <code>.rdx</code>, <code>.rda</code>, <code>.md</code>, <code>.rd</code> natively (Aug 2025)</li>
 </ul>
-<p><strong>FDA eCTD expanded formats (Aug 2025):</strong> Now accepts <code>.rds</code>, <code>.rdb</code>, <code>.rdx</code>, <code>.rda</code>, <code>.md</code>, <code>.rd</code>, <code>.zip</code>, <code>.html</code> directly</p>
+<blockquote>
+<p><code>{pkglite}</code> remains a valid, peer-reviewed approach — <code>.zip</code> is an added <em>option</em>, not a replacement</p>
+</blockquote>
 </div><div class="column" style="width:50%;">
 <p><strong>Regulatory wins</strong></p>
 <ul>
