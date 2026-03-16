@@ -81,7 +81,7 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 **Team:** Roche · Atorus · Merck · Eli Lilly · **FDA:** Paul Schuette · Hye Soo Cho · **Reviewed:** Oct 2023
 
 ::: {.callout-important}
-This was the **first time** a publicly available Shiny application was submitted and accepted through the FDA eCTD gateway.
+This was the **first time** a  Shiny application was submitted and accepted through the FDA eCTD gateway.
 :::
 
 ::: {.notes}
