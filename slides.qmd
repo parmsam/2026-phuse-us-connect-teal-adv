@@ -21,7 +21,7 @@ resources:
   - assets/
 ---
 
-## The Journey So Far {.center}
+## The Journey So Far {.center footer=false}
 
 ::: {.columns}
 ::: {.column width="50%"}
