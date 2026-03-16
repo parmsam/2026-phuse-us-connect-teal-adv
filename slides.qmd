@@ -66,7 +66,7 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 - Shiny app displaying the 4 TLFs from Pilot 1
 - Basic dataset filtering functionalities
 - Shiny code packaged as a **proprietary R package** via `{pkglite}`
-- Submitted via the eCTD portal (~2022 H1)
+- Submitted via the eCTD portal (~2022 H1); **accepted December 2022**
 :::
 ::: {.column width="45%"}
 **What FDA had to do**
@@ -81,7 +81,7 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 **Team:** Roche · Atorus · Merck · Eli Lilly · **FDA:** Paul Schuette · Hye Soo Cho · **Reviewed:** Oct 2023
 
 ::: {.callout-important}
-This was the **first time** an interactive Shiny application was submitted and accepted through the FDA eCTD gateway.
+This was the **first time** a publicly available Shiny application was submitted and accepted through the FDA eCTD gateway.
 :::
 
 ::: {.notes}

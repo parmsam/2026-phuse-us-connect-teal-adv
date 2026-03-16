@@ -24,7 +24,8 @@ Do not use WebFetch to populate ref-sources — it summarizes content through an
 
 ## Key Facts (from sources)
 
-- **Pilot 2 (~2022 H1):** First Shiny app submitted via FDA eCTD portal. Shiny code packaged as proprietary R package via `{pkglite}`. FDA deployed on their own infrastructure.
+- **Pilot 1 (concluded March 2022):** To our knowledge (per Posit, Feb 2023), the first publicly available regulatory submission using an open-source language and reproducible package structure. Submitted an R package; responded to FDA comments. Repository: RConsortium/submissions-pilot1-to-fda.
+- **Pilot 2 (submitted ~2022 H1; accepted by FDA December 2022):** To our knowledge (per Posit, Feb 2023), the first publicly available submission package that includes a Shiny component. First Shiny app submitted via FDA eCTD portal. Shiny code packaged as proprietary R package via `{pkglite}`. FDA deployed on their own infrastructure.
 - **Pilot 4 WebAssembly (Sept 20, 2024):** First publicly available WebAssembly submission received by FDA CDER. Runs in Microsoft Edge, no R installation required. Lead: Eric Nantz (Eli Lilly).
 - **Pilot 4 Containers (Summer 2025):** Docker-based (early Appsilon experimental work used Podman; canonical RConsortium repo uses Docker). Tested across ~15 FDA computing environments. Critical finding (Dec 2025): WSL is no longer permitted on FDA reviewer computers due to a security policy update — Docker on Windows requires WSL, effectively blocking Docker-based submissions at FDA. Formal summary report nearing completion as of Feb 2026.
 - **FDA preference:** WebAssembly over containers — contrary to the team's expectation.
@@ -36,6 +37,7 @@ Do not use WebFetch to populate ref-sources — it summarizes content through an
 ## Slide Accuracy Rules
 
 - Do not imply `{pkglite}` is deprecated — it is a peer-reviewed approach that remains valid.
+- Pilot 1 and Pilot 2 "first publicly available" claims are qualified — use "to our knowledge" as the source does. These are not the first ever FDA submissions with open-source or Shiny, just the first publicly available ones.
 - WebAssembly requires some libraries to compile/launch; say "no R installation required" not "no dependencies."
 - Pilot 4 formal report is not yet published — note as "nearing completion."
 - Pilot 6 won't be submitted to FDA.
