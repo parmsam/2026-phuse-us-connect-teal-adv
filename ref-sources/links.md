@@ -33,6 +33,8 @@ All URLs fetched and saved as raw markdown via [defuddle.md](https://defuddle.md
 |------|-------|-----|
 | `fda-ectd-expanded-formats.md` | Expanded FDA eCTD File Format Support for R Packages | https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/ |
 | `swissmedic-presentation.md` | R Consortium Submission WG Presentation to Swissmedic on Regulatory Submission using R and Shiny | https://r-consortium.org/posts/one-more-step-forward-the-r-consortium-submission-working-group-presentation-to-swissmedic-on-regulator-submission-using-r-and-shiny/ |
+| `appsilon-r-in-fda-submissions.md` | R in FDA Submissions: Lessons Learned from 5 FDA Pilots (Appsilon, May 2025) | https://www.appsilon.com/post/r-in-fda-submissions |
+| `eric-nantz-opensub-ness2025.md` | A Whole New (Open) World: Insights from R-based Submission Pilots — Eric Nantz, NESS 2025 (raw .qmd, fetched directly) | https://github.com/rpodcast/opensub-ness2025 |
 
 ## Meeting Minutes
 

@@ -71,9 +71,11 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 
 - Deploy the Shiny app on FDA infrastructure (laptop/server)
 - Reproduce the analysis results
+- Requested removal of p-values from filtered tables (p-hacking risk)
 
 **Team:** Roche · Atorus · Merck · Eli Lilly
 **FDA:** Paul Schuette · Hye Soo Cho
+**Review completed:** October 2023
 :::
 :::
 
@@ -83,6 +85,14 @@ This was the **first time** an interactive Shiny application was submitted and a
 
 ::: {.notes}
 Key point: the FDA had to actually install and run the app themselves on their own infrastructure. This was a significant logistical hurdle — hence the motivation for Pilot 4.
+:::
+
+## {#pilot2-demo data-menu-title="Pilot 2 Demo Video"}
+
+{{<video "assets/video/pilot2_app_demo_for_dia_compressed.mp4" >}}
+
+::: footer
+[github.com/RConsortium/submissions-pilot2](https://github.com/RConsortium/submissions-pilot2)
 :::
 
 ---
@@ -111,12 +121,12 @@ This creates friction in the review process and reproducibility risk.
 ```
 Pilot 4
 ├── 🐳 Containers
-│   └── Podman runtime
+│   └── Docker runtime
 │   └── Full system + R deps
 │
 └── 🌐 WebAssembly
     └── Runs in browser
-    └── No install needed
+    └── No R install needed
     └── via {webR}
 ```
 :::
@@ -161,6 +171,14 @@ No R installation. No server setup. No dependencies.
 
 ::: {.notes}
 WebR is a genuinely remarkable piece of technology — R running entirely in the browser. The Pilot 2 app had to be adapted but most functionality was preserved.
+:::
+
+## {#pilot4demo data-menu-title="Pilot 4 WebAssembly Demo Video"}
+
+{{<video "assets/video/pilot4_webassembly_demo.mp4" aspect-ratio="16x9">}}
+
+::: footer
+[submissions-pilot4-webr.netlify.app](https://submissions-pilot4-webr.netlify.app/)
 :::
 
 ---
@@ -216,7 +234,6 @@ The WSL security policy change is a fundamental blocker — not just an inconven
 **Regulatory wins**
 
 - FDA Pilot 3 response letter: R ADaMs fully accepted
-- Submission to **Swissmedic** (Jan 2024) — 60 attendees
 - FDA verbal → written feedback loop established
 - All pilots **publicly available** as templates
 
@@ -243,8 +260,10 @@ Pilots 2 & 4 prove that Shiny apps **built on frameworks like {teal}** can be su
 **Key considerations for {teal} apps:**
 
 - Package as proprietary R package (`{pkglite}` or `.zip`)
-- Document all dependencies in ADRG
-- Design for deployment on reviewer's infrastructure
+- Prefer CRAN-hosted packages — FDA reviewers favour known, vetted dependencies
+- Document all dependencies in ADRG (more detail than SAS requires)
+- Design for deployment on reviewer's Windows infrastructure
+- For interactive filtering: avoid showing inferred statistics (p-values) on filtered subsets
 - Consider WebAssembly constraints for Pilot 4-style delivery
 :::
 ::: {.column width="45%"}
@@ -252,7 +271,8 @@ Pilots 2 & 4 prove that Shiny apps **built on frameworks like {teal}** can be su
 
 1. Should regulatory Shiny apps focus on **TLF review only** or include **exploratory analysis**?
 2. How do we handle `{teal}` module dependency validation?
-3. WebAssembly for `{teal}` — what's feasible today?
+3. WebAssembly for `{teal}` — what's feasible today? (Note: `{golem}` was incompatible with webR; framework choices matter)
+4. Could Nix/Rix offer a lighter-weight alternative to containers for reproducible environments?
 
 ::: {.callout-tip}
 ## Workshop prompt
@@ -287,8 +307,9 @@ Bring it back to the teal audience — these pilots are the proof of concept, te
 
 - Join the WG — open to all
 - Pilots 6 & 7 launching 2026
-- Pilot 6: expanded ADaMs + AI/automation
+- Pilot 6: expanded ADaMs + AI/automation (won't be submitted to FDA)
 - Pilot 7: realistic simulated CDISC data
+- Future: Nix/Rix for reproducible environments; AI-assisted ADRG generation under discussion
 
 **References**
 - [2026 WG Update](https://r-consortium.org/posts/submissions-wg-2026/)
@@ -296,5 +317,7 @@ Bring it back to the teal audience — these pilots are the proof of concept, te
 - [Pilot 4 overview](https://rconsortium.github.io/submissions-wg/pilot4.html)
 - [FDA eCTD format expansion](https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages/)
 - [PharmaSUG 2024 SS-344](https://www.lexjansen.com/pharmasug/2024/SS/PharmaSUG-2024-SS-344.pdf)
+- [Appsilon: R in FDA Submissions — 5 Pilots](https://www.appsilon.com/post/r-in-fda-submissions)
+- [Eric Nantz (NESS 2025): A Whole New (Open) World](https://rpodcast.github.io/opensub-ness2025/)
 :::
 :::
