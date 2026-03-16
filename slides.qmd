@@ -269,10 +269,9 @@ Pilots 2 & 4 prove that Shiny apps **built on frameworks like {teal}** can be su
 ::: {.column width="45%"}
 **Open questions for discussion**
 
-1. Should regulatory Shiny apps focus on **TLF review only** or include **exploratory analysis**?
-2. How do we handle `{teal}` module dependency validation?
-3. WebAssembly for `{teal}` — what's feasible today? (Note: `{golem}` was incompatible with webR; framework choices matter)
-4. Could Nix/Rix offer a lighter-weight alternative to containers for reproducible environments?
+1. How do we handle `{teal}` module dependency validation?
+2. WebAssembly for `{teal}` — what's feasible today? (Note: `{golem}` was incompatible with webR; framework choices matter)
+3. Could Nix/Rix offer a lighter-weight alternative to containers for reproducible environments?
 
 ::: {.callout-tip}
 ## Workshop prompt
