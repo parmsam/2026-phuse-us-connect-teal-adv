@@ -4,7 +4,7 @@ subtitle: "Updates from the R Consortium R Submissions Working Group"
 author: PHUSE US Connect 2026 · AV09 {teal} Advance Session \
 
   Sam Parmar
-date: "2026-03-15"
+date: "2026-03-25"
 format:
   revealjs:
     theme: default

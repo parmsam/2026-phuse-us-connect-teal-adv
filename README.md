@@ -3,6 +3,7 @@
 **Session:** AV09: Data Visualisation & Open Source Technology Advance Session:
 *{teal} as a Catalyst for Cross-Industry Collaboration and Innovation in Clinical Insight Generation*
 
+**Time**: Wednesday, March 25 1:30pm-3:30pm
 **Talk:** Shiny for Submission Update — 10-minute presentation / workshop
 **Focus:** R Consortium R Submissions Working Group — Pilot 2 & Pilot 4 updates
 
