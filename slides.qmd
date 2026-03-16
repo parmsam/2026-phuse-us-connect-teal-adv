@@ -17,6 +17,8 @@ format:
     code-overflow: wrap
     highlight-style: github
 embed-resources: true
+resources:
+  - assets/
 ---
 
 ## The Journey So Far {.center}
