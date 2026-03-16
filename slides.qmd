@@ -159,9 +159,11 @@ WebAssembly package reached FDA eCTD gateway on **September 20, 2024**
 ::: {.column width="40%"}
 ::: {.callout-tip}
 ## FDA Reviewer Experience
-Open Microsoft Edge → navigate to app → done.
+1. Extract submission bundle
+2. Run setup code to start local web server
+3. Open app in Microsoft Edge
 
-No R installation. No server setup. No dependencies.
+No Shiny server. No R environment. Runs in the browser.
 :::
 
 **Repo:** [submissions-pilot4-webR](https://github.com/RConsortium/submissions-pilot4-webR)
