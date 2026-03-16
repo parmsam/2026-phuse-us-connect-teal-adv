@@ -16,7 +16,7 @@ format:
     footer: "R Consortium R Submissions WG · PHUSE US Connect 2026 · [parmsam.github.io/2026-phuse-us-connect-teal-adv](https://parmsam.github.io/2026-phuse-us-connect-teal-adv)"
     code-overflow: wrap
     highlight-style: github
-embed-resources: true
+
 resources:
   - assets/
 ---
@@ -55,7 +55,7 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 
 ---
 
-## Pilot 2: The First Shiny App to FDA {.center}
+## Pilot 2: The First Shiny App to FDA {.center .smaller footer=false}
 
 > *"Example R-based submission contains a Shiny app, submitted through the current FDA e-submission system and process"*
 
@@ -74,12 +74,11 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 - Deploy the Shiny app on FDA infrastructure (laptop/server)
 - Reproduce the analysis results
 - Requested removal of p-values from filtered tables (p-hacking risk)
+:::
+:::
 
-**Team:** Roche · Atorus · Merck · Eli Lilly
-**FDA:** Paul Schuette · Hye Soo Cho
-**Review completed:** October 2023
-:::
-:::
+
+**Team:** Roche · Atorus · Merck · Eli Lilly · **FDA:** Paul Schuette · Hye Soo Cho · **Reviewed:** Oct 2023
 
 ::: {.callout-important}
 This was the **first time** an interactive Shiny application was submitted and accepted through the FDA eCTD gateway.
@@ -253,8 +252,6 @@ The eCTD format expansion is huge — it means you no longer need to use pkglite
 
 ## What This Means for {teal}
 
-::: {.columns}
-::: {.column width="55%"}
 **The submission pathway is open**
 
 Pilots 2 & 4 prove that Shiny apps **built on frameworks like {teal}** can be submitted to regulators.
@@ -267,9 +264,16 @@ Pilots 2 & 4 prove that Shiny apps **built on frameworks like {teal}** can be su
 - Design for deployment on reviewer's Windows infrastructure
 - For interactive filtering: avoid showing inferred statistics (p-values) on filtered subsets
 - Consider WebAssembly constraints for Pilot 4-style delivery
+
+::: {.notes}
+Bring it back to the teal audience — these pilots are the proof of concept, teal is the framework that makes it practical at scale.
 :::
-::: {.column width="45%"}
-**Open questions for discussion**
+
+---
+
+## Discussion
+
+**Open questions**
 
 1. How do we handle `{teal}` module dependency validation?
 2. WebAssembly for `{teal}` — what's feasible today? (Note: `{golem}` was incompatible with webR; framework choices matter)
@@ -278,12 +282,6 @@ Pilots 2 & 4 prove that Shiny apps **built on frameworks like {teal}** can be su
 ::: {.callout-tip}
 ## Workshop prompt
 Have you tried deploying a {teal} app through your regulatory review process? What challenges did you face?
-:::
-:::
-:::
-
-::: {.notes}
-Bring it back to the teal audience — these pilots are the proof of concept, teal is the framework that makes it practical at scale.
 :::
 
 ---
@@ -301,7 +299,7 @@ Bring it back to the teal audience — these pilots are the proof of concept, te
 **Key repositories**
 - [submissions-pilot2](https://github.com/RConsortium/submissions-pilot2)
 - [submissions-pilot4-webR](https://github.com/RConsortium/submissions-pilot4-webR)
-- [experimental-fda-submission-4-podman](https://github.com/Appsilon/experimental-fda-submission-4-podman)
+- [submissions-pilot4-container](https://github.com/RConsortium/submissions-pilot4-container)
 :::
 ::: {.column width="50%"}
 **Get involved**
@@ -312,6 +310,9 @@ Bring it back to the teal audience — these pilots are the proof of concept, te
 - Pilot 7: realistic simulated CDISC data
 - Future: Nix/Rix for reproducible environments; AI-assisted ADRG generation under discussion
 
+:::
+:::
+
 **References**
 - [2026 WG Update](https://r-consortium.org/posts/submissions-wg-2026/)
 - [Pilot 2 overview](https://rconsortium.github.io/submissions-wg/pilot2.html)
@@ -320,5 +321,3 @@ Bring it back to the teal audience — these pilots are the proof of concept, te
 - [PharmaSUG 2024 SS-344](https://www.lexjansen.com/pharmasug/2024/SS/PharmaSUG-2024-SS-344.pdf)
 - [Appsilon: R in FDA Submissions — 5 Pilots](https://www.appsilon.com/post/r-in-fda-submissions)
 - [Eric Nantz (NESS 2025): A Whole New (Open) World](https://rpodcast.github.io/opensub-ness2025/)
-:::
-:::
