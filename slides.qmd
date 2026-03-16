@@ -163,7 +163,7 @@ WebAssembly package reached FDA eCTD gateway on **September 20, 2024**
 2. Run setup code to start local web server
 3. Open app in Microsoft Edge
 
-No Shiny server. No R environment. Runs in the browser.
+No Shiny server. No R environment needed. Runs in the browser.
 :::
 
 **Repo:** [submissions-pilot4-webR](https://github.com/RConsortium/submissions-pilot4-webR)
