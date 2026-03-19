@@ -57,7 +57,7 @@ Set context — this WG has been systematically proving R is viable for FDA subm
 
 ## Pilot 2: The First Shiny App to FDA {.center .smaller footer=false}
 
-> *"Example R-based submission contains a Shiny app, submitted through the current FDA e-submission system and process"*
+**Goal:** Example R-based submission containing a Shiny app, submitted through the current FDA e-submission system and process
 
 ::: {.columns}
 ::: {.column width="55%"}
