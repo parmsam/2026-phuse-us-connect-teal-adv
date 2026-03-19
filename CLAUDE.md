@@ -36,6 +36,7 @@ Do not use WebFetch to populate ref-sources — it summarizes content through an
 
 ## Slide Accuracy Rules
 
+- **Quotations must be verified verbatim.** Before including any direct quote in slides, read the relevant file in `ref-sources/` and confirm the exact wording appears there. Never paraphrase into quote marks. If a candidate quote cannot be located in a ref-source file, do not use it — flag it to the presenter instead.
 - Do not imply `{pkglite}` is deprecated — it is a peer-reviewed approach that remains valid.
 - Pilot 1 and Pilot 2 "first publicly available" claims are qualified — use "to our knowledge" as the source does. These are not the first ever FDA submissions with open-source or Shiny, just the first publicly available ones.
 - WebAssembly requires some libraries to compile/launch; say "no R installation required" not "no dependencies."
