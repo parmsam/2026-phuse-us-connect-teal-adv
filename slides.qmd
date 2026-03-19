@@ -145,8 +145,7 @@ This is the logical evolution — Pilot 2 proved the concept, Pilot 4 tried to m
 ::: {.column width="60%"}
 **What is WebAssembly?**
 
-> *"Compiles applications into a portable and consistent environment that can be run directly within a web browser"*
-> — Eric Nantz, Eli Lilly
+Compiles applications into a portable, self-contained bundle that can be run directly within a web browser.
 
 **Key tools:**
 - `{webR}` — R compiled to WebAssembly
