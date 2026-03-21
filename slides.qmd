@@ -239,9 +239,7 @@ The WSL security policy change is a fundamental blocker — not just an inconven
 - FDA verbal → written feedback loop established
 - All pilots **publicly available** as templates
 
-::: {.callout-note}
 Industry experts and FDA reviewers work collaboratively to improve regulatory science infrastructure
-:::
 :::
 :::
 
