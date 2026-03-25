@@ -322,3 +322,11 @@ Have you tried deploying a {teal} app through your regulatory review process? Wh
 - [PharmaSUG 2024 SS-344](https://www.lexjansen.com/pharmasug/2024/SS/PharmaSUG-2024-SS-344.pdf)
 - [Appsilon: R in FDA Submissions — 5 Pilots](https://www.appsilon.com/post/r-in-fda-submissions)
 - [Eric Nantz (NESS 2025): A Whole New (Open) World](https://rpodcast.github.io/opensub-ness2025/)
+
+## Thanks! 
+
+Slides:
+
+<div style="display:inline-block; transform:scale(1.5); transform-origin:0 0;">
+{{< qrcode https://github.com/parmsam/2026-phuse-us-connect-teal-adv >}}
+</div>
